@@ -1,0 +1,12 @@
+name: ping
+on:
+  workflow_dispatch:
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: echo "linux ok: $RUNNER_OS"
+  mac:
+    runs-on: macos-15
+    steps:
+      - run: echo "mac ok: $RUNNER_OS"
